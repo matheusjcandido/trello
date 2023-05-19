@@ -75,7 +75,7 @@ def run_code():
         )
 
         generated_text = response.choices[0].message['content']
-        st.write(generated_text)
+        #st.write(generated_text)
         
 #         if st.button("Copiar"):
 #             pyperclip.copy(generated_text)
