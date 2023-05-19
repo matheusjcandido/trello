@@ -73,7 +73,12 @@ def run_code():
             messages=messages
         )
 
-        st.text(response.choices[0].message['content'])
+        generated_text = response.choices[0].message['content']
+        st.write(generated_text)
+        
+        if st.button("Copiar"):
+            pyperclip.copy(generated_text)
+            st.info("Texto copiado para a área de transferência!")
     else:
         st.text(f"Card '{card_name}' not found in descriptions.")
 
