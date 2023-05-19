@@ -82,7 +82,7 @@ def run_code():
 #             st.info("Texto copiado para a área de transferência!")
             
         # Caixa de texto para copiar manualmente
-        st.text_area("Texto gerado", generated_text)
+        st.text_area("Texto gerado", generated_text, height=400)
         
         
     else:
