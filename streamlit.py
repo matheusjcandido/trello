@@ -62,9 +62,9 @@ def run_code():
              Escreva em um tom conciso, profissional e objetivo. Não expanda eventuais acrônimos, deixando-os em formato de sigla.\
             assine o despacho como 'Coronel QOBM Manoel Vasco de Figueiredo Junior, Comandante-Geral do Corpo de Bombeiros Militar do Paraná'.\
             O despacho deve ser escrito no seguinte formato: \
-            'Ciente. \
-            2. Decisão a ser tomada sobre o assunto. \
-            3. Encaminhamento do expediente. \
+            'Ciente. \n \
+            2. Decisão a ser tomada sobre o assunto. \n \
+            3. Encaminhamento do expediente. \n \
             Assinatura do Comandante'. "},
             {"role": "user", "content": description},
         ]
