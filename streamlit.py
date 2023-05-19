@@ -10,7 +10,7 @@ client = TrelloClient(
     #token_secret='your_oauth_token_secret'
 )
 
-openai_api_key = "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"
+openai_api_key = "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"
 openai_model = "gpt-3.5-turbo"
 
 # Crie um widget de botão para atualizar as informações do Trello
