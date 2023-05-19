@@ -2,6 +2,7 @@ from trello import TrelloClient
 import requests
 import openai
 import streamlit as st
+import pyperclip
 
 
 st.title('Geração de texto de despacho')
