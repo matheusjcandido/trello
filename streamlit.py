@@ -51,7 +51,6 @@ openai.api_key = openai_key
 
 # adicionar um botão para gerar um despacho
 def run_code():
-    card_name = card_name
     
     # Certifique-se de que o cartão existe no dicionário
     if card_name in card_descriptions:
