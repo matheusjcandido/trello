@@ -50,7 +50,9 @@ card_name = st.selectbox('Selecione um cartão', list(card_descriptions.keys()))
 openai.api_key = openai_key
 
 # adicionar um botão para gerar um despacho
-if st.button('Gerar despacho'):
+def run_code():
+    card_name = card_name
+    
     # Certifique-se de que o cartão existe no dicionário
     if card_name in card_descriptions:
         description = card_descriptions[card_name]
@@ -68,14 +70,14 @@ if st.button('Gerar despacho'):
         ]
 
         response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=messages
+            model="gpt-3.5-turbo",
+            messages=messages
         )
 
-        print(response.choices[0].message['content'])
+        st.text(response.choices[0].message['content'])
     else:
-        print(f"Card '{card_name}' not found in descriptions.")
+        st.text(f"Card '{card_name}' not found in descriptions.")
 
 # adicionar a resposta como texto em um widget de texto para que o usuário possa vê-lo
-st.write('Despacho gerado:')
-st.write(response.choices[0].message['content'])
+if st.button("Gerar Despacho"):
+    run_code()
